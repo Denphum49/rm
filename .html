@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Resume</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 10px;
+    font-family: 'Kanit', sans-serif;
+    background-color: #fffdf7;
+    background-image:
+    linear-gradient(#eee9df 1px, transparent 1px),
+    linear-gradient(90deg, #eee9df 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #383333;
+}
+
+.resume {
+    max-width: 750px;
+    margin: auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f28b91;
+    -webkit-text-stroke: 1px #9c6262;
+    text-shadow: 2px 3px #f9d5d5;
+}
+
+.profile {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.photo {
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #f7dcdc;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid #f2caca;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 3px 0;
+}
+
+.contact {
+    margin-top: 15px;
+}
+
+.personal {
+    background: #F3D8D1;
+    border-radius: 35px;
+    padding: 15px 25px;
+    margin-top: 20px;
+}
+
+.personal h3 {
+    margin-top: 0;
+}
+
+.personal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 15px;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.section {
+    background: #E5D0E2;
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid #f7cccc;
+    min-height: 120px;
+}
+
+.section h3 {
+    color: #d77f83;
+    border-bottom: 1px solid #f2caca;
+    padding-bottom: 5px;
+}
+
+.blue {
+    background: #e1f5f8;
+    border-color: #c2e6ec;
+}
+
+.blue h3 {
+    color: #6caeba;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 11px;
+    color: #999;
+}
+
+@media(max-width:550px) {
+    .resume {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .profile {
+        gap: 12px;
+    }
+
+    .photo {
+        width: 125px;
+        height: 170px;
+    }
+
+    .name {
+        font-size: 17px;
+    }
+
+    .sections {
+        gap: 8px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <div class="header">
+        <div class="logo">RESUME</div>
+        <div style="font-size:30px;">📎</div>
+    </div>
+
+    <div class="profile">
+
+        <!--  -->
+        <img src="123456.jpg" class="photo">
+
+        <div class="info">
+            <div class="name">ชื่อ - นามสกุล</div>
+
+            <h3>เกี่ยวกับฉัน</h3>
+            <p>
+                สวัสดี! ฉันเป็นคนที่มีความตั้งใจ
+                ชอบเรียนรู้สิ่งใหม่ ๆ และพร้อมพัฒนาตัวเอง
+                มีความรับผิดชอบและทำงานร่วมกับผู้อื่นได้ดี
+            </p>
+
+            <div class="contact">
+                <h3>ช่องทางติดต่อ</h3>
+                <p>📧 example@gmail.com</p>
+                <p>📷 Instagram : example</p>
+                <p>📞 012-345-6789</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="personal">
+        <h3>ข้อมูลส่วนตัว</h3>
+        <div class="personal-grid">
+            <p><b>ชื่อ :</b> นาย เด่นภูมิ สุทธิประภา</p>
+            <p><b>ชื่อเล่น :</b> ชื่อเล่น คิว</p>
+            <p><b>อายุ :</b>  16ปี</p>
+            <p><b>วันเกิด :</b> 26 มีนาคม 2007</p>
+            <p><b>สัญชาติ :</b> ไทย</p>
+            <p><b>ศาสนา :</b> พุทธ</p>
+        </div>
+    </div>
+
+    <div class="sections">
+
+        <div class="section">
+            <h3>🎓 การศึกษา</h3>
+            <p><b>2022</b></p>
+            <p>ระดับมัธยมศึกษาตอนต้น</p>
+            <p><b>2025</b></p>
+            <p>ระดับประกาศนียบัตรวิชาชีพ</p>
+        </div>
+
+        <div class="section">
+            <h3>🏆 ผลงานที่ได้รับ</h3>
+            <p><b>2021</b></p>
+            <p>ได้รับเกียรติบัตรจากโรงเรียน</p>
+            <p><b>2024</b></p>
+            <p>เข้าร่วมกิจกรรมการแข่งขัน</p>
+        </div>
+
+        <div class="section blue">
+            <h3>💻 ทักษะที่จำเป็น</h3>
+            <p>• ใช้โปรแกรมคอมพิวเตอร์</p>
+            <p>• ออกแบบกราฟิก</p>
+            <p>• ทำงานเป็นทีม</p>
+        </div>
+
+        <div class="section blue">
+            <h3>🌷 งานอดิเรก</h3>
+            <p>• อ่านหนังสือ</p>
+            <p>• เล่นคอมพิวเตอร์</p>
+            <p>• ถ่ายภาพ / ฟังเพลง</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        THANK YOU FOR VISITING MY RESUME ♡
+    </div>
+
+</div>
+
+</body>
+</html>
